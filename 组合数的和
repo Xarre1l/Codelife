@@ -1,0 +1,16 @@
+#include<stdio.h>
+main()
+{
+    int i,N,sum=0,q[10];
+    scanf("%d",&N);
+    for (i=0;i<N;i++)
+    {
+    	scanf("%d",&q[i]);
+	}
+	for (i=0;i<N;i++)
+	{
+		sum+=q[i]*11*(N-1);
+	}
+	printf("%d\n",sum);
+	return 0;
+}
